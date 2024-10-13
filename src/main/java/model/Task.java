@@ -9,13 +9,15 @@ public class Task {
     private TaskState state;
     private TaskPrio prio;
     private LocalDate lastUpdated;
+    private final LocalDate created;
 
-    Task(int id, String description, String takenBy, TaskState state, TaskPrio prio) {
+    Task(int id, String description, TaskPrio prio) {
         this.id = id;
         this.description = description;
         this.takenBy = takenBy;
-        this.state = state;
+        this.state = TaskState.TO_DO;
         this.prio = prio;
+        this.lastUpdated = created;
     }
 
 
