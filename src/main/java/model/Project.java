@@ -2,6 +2,10 @@ package model;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+
+import model.matcher.ITaskMatcher;
 
 public class Project implements Comparable<Project> {
     private final String title;
@@ -27,6 +31,34 @@ public class Project implements Comparable<Project> {
             }
         }
         return null;
+    }
+    public Task addTask(String descr, TaskPrio prio) {
+        Task task = new Task(nextTaskId, descr, prio);
+        nextTaskId++;
+        tasks.add(task);
+        return task;
+    }
+
+    public List<Task> findTasks(ITaskMatcher matcher) {
+        //TODO make findTasks
+        return null;
+    }
+
+    public ProjectState getProjectState() {
+        if (tasks.isEmpty()) {return ProjectState.EMPTY;}
+        for (int i = 0; i < tasks.size(); i++) {
+            tasks.get(i).getState();
+            if (tasks.get(i).getState() == TaskState.IN_PROGRESS) {return ProjectState.ONGOING;}
+        }
+        return ProjectState.COMPLETED;
+    }
+
+    public LocalDate getLastUpdated() {
+        LocalDate lastUpdated;
+        if (tasks.isEmpty()) {
+            return created;
+        }
+        return tasks.stream().map(Task::getLastUpdated).max(LocalDate::compareTo).orElse(created);
     }
 
     public boolean removeTask(Task task){
