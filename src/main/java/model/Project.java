@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import model.matcher.ITaskMatcher;
 
@@ -40,8 +41,9 @@ public class Project implements Comparable<Project> {
     }
 
     public List<Task> findTasks(ITaskMatcher matcher) {
-        //TODO make findTasks
-        return null;
+        List<Task> matchedTasks = tasks.stream().filter(matcher::match).collect(Collectors.toList());
+        matchedTasks.sort(Comparator.naturalOrder());
+        return matchedTasks;
     }
 
     public ProjectState getProjectState() {
