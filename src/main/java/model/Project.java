@@ -1,5 +1,6 @@
 package model;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -8,7 +9,7 @@ import java.util.stream.Collectors;
 
 import model.matcher.ITaskMatcher;
 
-public class Project implements Comparable<Project> {
+public class Project implements Comparable<Project>, Serializable {
     private final String title;
     private final int id;
     private final String description;

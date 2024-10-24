@@ -9,7 +9,7 @@ import java.util.List;
 
 public class ProjectApp {
 
-    private static final String FILE_NAME = "projects.ser";
+    private static final String FILE_NAME = "project.ser";
 
     public void run() throws Exception { // we do not catch all exceptions
 
