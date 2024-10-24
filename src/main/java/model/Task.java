@@ -107,4 +107,13 @@ public class Task implements Comparable<Task>, Serializable {
         return description.equals(task.description) && prio == task.prio;
     }
 
+    @Override
+    public String toString() {
+        return "Task{" +
+                "description='" + description + '\'' +
+                ", takenBy='" + takenBy + '\'' +
+                ", state=" + state +
+                ", prio=" + prio +
+                '}';
+    }
 }
