@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af3ddf65-378e-4ed5-952c-40d5bcbae2ad" name="Changes" comment="Fixed small error in not done matcher and added tostring method in task">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Project.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/ProjectApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/ProjectApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,12 +29,12 @@
     &quot;assignee&quot;: &quot;KevinPernu&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/maximilian777/Lab3B.git",
-    "accountId": "82137be3-de51-4f39-98aa-8e0eb99068ba"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/maximilian777/Lab3B.git&quot;,
+    &quot;accountId&quot;: &quot;82137be3-de51-4f39-98aa-8e0eb99068ba&quot;
   }
-}]]></component>
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
