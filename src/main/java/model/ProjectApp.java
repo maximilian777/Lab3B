@@ -1,6 +1,6 @@
+package model;
+
 import io.ProjectsFileIO;
-import model.Project;
-import model.ProjectsManager;
 import ui.MainUI;
 
 import java.io.File;
