@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af3ddf65-378e-4ed5-952c-40d5bcbae2ad" name="Changes" comment="Finished some methods, TO_DO: findTasks()">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ui/CurrentProjectUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ui/MainUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/InputUtils.java" afterDir="false" />
+    <list default="true" id="af3ddf65-378e-4ed5-952c-40d5bcbae2ad" name="Changes" comment="Added javadoc">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ProjectApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/ProjectApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ProjectsFileIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ProjectsFileIO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Project.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/ProjectsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/ProjectsManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/matcher/NotDoneMatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/matcher/NotDoneMatcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/matcher/PrioMatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/matcher/PrioMatcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/matcher/TakenByMatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/matcher/TakenByMatcher.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -58,22 +58,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.HelloApplication.executor": "Run",
-    "Application.ProjectApp.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
@@ -134,17 +133,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="created classes and beginning of task class" />
     <MESSAGE value="Finished some methods, TO_DO: findTasks()" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished some methods, TO_DO: findTasks()" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/model/matcher/PrioMatcher.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Added javadoc" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added javadoc" />
   </component>
 </project>
