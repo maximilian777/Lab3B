@@ -6,8 +6,8 @@ public class NotDoneMatcher implements ITaskMatcher {
     @Override
     public boolean match(Task task) {
         if (task.getState() != TaskState.DONE) {
-            return false;
+            return true;
         }
-        return true;
+        return false;
     }
 }
